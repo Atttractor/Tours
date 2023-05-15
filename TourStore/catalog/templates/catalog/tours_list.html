@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block title %} <title>Tours</title> {% endblock %}
+{% block content %}
+<div class="content">
+  <form action="{% url 'tours' %}">
+    <div id="ddd">
+      <input type="text" placeholder="Поиск" class="input_form" name="search">
+      <button class="input_button">Поиск</button>
+      <div class="settings">
+        <a>Цена:</a>
+        <a>от</a>
+        <input type="text" class="small_input" name="price_from" placeholder="0"/><a>р.</a>
+        <a>до</a>
+        <input type="text" class="small_input" name="price_to" placeholder="300000"/><a>р.</a>
+        <a>|</a>
+        <a>Дата:</a>
+        <a>с</a>
+        <input type="date" class="date" name="date_from"/>
+        <a>по</a>
+        <input type="date" class="date" name="date_to"/>
+        <a>|</a>
+        <label>Страна:
+          <select name="country">
+            <option>Любая</option>
+          </select>
+        </label>
+        <a>|</a>
+        <label>Город:
+          <select name="city">
+            <option>Любой</option>
+          </select>
+        </label>
+        <a>|</a>
+        <label>Авиакомпания:
+          <select name="company">
+            <option>Любая</option>
+          </select>
+        </label>
+      </div>
+    </div>
+  </form>
+  {% for tour in tours_list %}
+  <a href="{{ tour.get_absolute_url }}">
+      <div class="tour_post">
+        <div class="tour_image">
+          <img src="{{ tour.tour_pic.url }}" alt="">
+        </div>
+        <div class="tour_description">
+          <h2>{{ tour.name }}</h2>
+          <p>{{ tour.description }}</p>
+        </div>
+        <div class="tour_info">
+          <h4>{{ tour.start_date|date:"d-m-Y" }} - {{ tour.end_date|date:"d-m-Y" }}</h4>
+          <h5>Отель: {{ tour.hotels_name}}</h5>
+          <h5>Бар: {% if tour.hotels_name.bar %} ✔ {% else %} <strong>X</strong> {% endif %}</h5>
+          <h5>Бассеин: {% if tour.hotels_name.pool %} ✔ {% else %} <strong>X</strong> {% endif %}</h5>
+          <h5>Шведский стол:{% if tour.hotels_name.buffet %} ✔ {% else %} <strong>X</strong> {% endif %}</h5>
+          <h3>Цена: {{ tour.price }}р.</h3>
+        </div>
+      </div>
+    </a>
+  {% endfor %}
+</div>
+{% endblock %}

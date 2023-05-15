@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %} <title>Home</title> {% endblock %}
+{% block content %}
+  <section class="block">
+    <div class="block-text">
+      <h1>Куда поедем?</h1>
+    </div>
+    {% load static %}
+    <div class="block-img">
+      <img src="{% static 'media/logo.png' %}" alt="Logo">
+    </div>
+  </section>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %} <title>travel Companies</title> {% endblock %}
+{% block content %}
+<div class="travel_companies">
+  <form action="{% url 'tours' %}">
+    <div id="ccc"><i class='bx bxs-cog' id="settigs_icon"></i></div>
+    <div id="ddd">
+      <input type="text" placeholder="Поиск" class="input_form" name="search">
+      <button class="input_button">Поиск</button>
+    </div>
+  </form>
+  <div class="travel_companies_list">
+    {% for company in travelcompanies_list %}
+      <a href="{{ company.get_absolute_url }}">
+        <div class="company_box">
+          <h2>{{ company.name }}</h2>
+          <img src="{{ company.travel_company_pic.url }}" alt="#">
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

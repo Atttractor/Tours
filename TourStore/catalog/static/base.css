@@ -1,0 +1,260 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+header {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 33px 9%;
+  background: transparent;
+}
+.logo {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+}
+.menu {
+  display: flex;
+}
+.menu a {
+  color: white;
+  margin-left: 60px;
+  font-size: 15px;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: all .55s ease;
+  text-align: justify;
+}
+.menu a:hover {
+  border-bottom: 2px solid white;
+}
+#menu-icon {
+  color: white;
+  font-size: 35px;
+  z-index: 1001;
+  cursor: pointer;
+}
+.icons {
+  display: flex;
+}
+.link_icon {
+  color: white;
+  font-size: 50px;
+  margin-right: 70px;
+  transition: color 0.3s;
+}
+.link_icon:hover {
+  color: red;
+}
+.block {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+section {
+  padding: 0 19%;
+}
+.block-text h5{
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 40px;
+}
+.block-text h1 {
+  font-size: 90px;
+  line-height: 1;
+  color: white;
+  margin: 0 0 45px;
+}
+.block-text h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 10px;
+}
+.block-text p {
+  font-size: 15px;
+  line-height: 1.9;
+  color: white;
+  margin-bottom: 40px;
+}
+.block-img img {
+  width: 700px;
+  height: auto;
+}
+body {
+  background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+.content {
+  width: 100%;
+  height: 50;
+  min-height: 100vh;
+  margin-top: 158px;
+  display: grid;
+  color: black;
+}
+.tour_post {
+  border: 5px solid white;
+  display: flex;
+  width: 100%;
+  height: 250px;
+  padding: 20px 9%;
+  transition: border 0.3s;
+  cursor: pointer;
+  min-width: 1300px;
+  color: black;
+}
+.tour_post:hover {
+  border: 5px solid red;
+}
+.tour_image {
+  width: 20%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.tour_image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.tour_description p {
+  max-width: 100%;
+  font-size: 20px;
+  font-weight: 100;
+}
+.tour_description {
+  padding-left: 10px;
+  text-align: left;
+  width: 50%;
+}
+.tour_info {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding-left: 10px;
+}
+.tour_info h4{
+  font-size: 20px;
+  font-weight: 100;
+  color: black;
+}
+.tour_info h5 {
+  padding-top: 4px;
+  font-size: 25px;
+  font-weight: 100;
+  line-height: 1;
+}
+.tour_info h3 {
+  font-size: 35px;
+  font-weight: 200;
+}
+.content a {
+  height: 250px;
+  margin-top: 10px;
+  text-decoration: none;
+}
+.travel_companies{
+  width: 100%;
+  height: 50;
+  min-height: 100vh;
+  margin-top: 158px;
+}
+.travel_companies_list {
+  padding: 50px 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.company_box {
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+  color: black;
+  transition: border 0.3s;
+  border: 5px solid white;
+}
+.company_box:hover {
+  border: 5px solid red;
+  color: black;
+}
+.company_box h2 {
+  margin-bottom: 20px;
+}
+.company_box img {
+  max-width: 400px;
+  max-height: 400px;
+  vertical-align: middle;
+}
+.travel_companies_list a {
+  margin: 20px;
+}
+.tour_detail{
+  padding: 0 200px;
+  text-align: center;
+}
+.tour_detail h1{
+  font-size: 38px;
+  margin-bottom: 40px;
+}
+.tour_detail img {
+  max-width: 800px;
+  max-height: 800px;
+  padding-bottom: 40px;
+}
+.tour_desription {
+  text-align: left;
+}
+.tour_desription li {
+  text-align: left;
+  padding-bottom: 5px;
+  font-size: 18;
+  font-weight: 300
+}
+.desription {
+  font-size: 20px;
+  font-weight: 400;
+}
+form {
+  padding-right: 1vh;
+  padding-left: 2vh;
+  display: flex;
+}
+#ddd {
+  width: 100%;
+}
+.input_form {
+  width: 90%;
+}
+form input {
+  padding-left: 4px;
+}
+.input_button {
+  width: 9%;
+}
+.small_input {
+  width: 60px;
+}
+.date {
+  width: 100px;
+}
+.settings{
+  display: block;
+  align-items: justify;
+}

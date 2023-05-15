@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %} <title>{{ travelcompanies.name }}</title> {% endblock %}
+{% block content %}
+<div class="content">
+    <div class="tour_detail">
+      <h1>{{travelcompanies.name}}</h1>
+      <img src="{{ travelcompanies.travel_company_pic.url }}" alt="">
+      <div class="tour_desription">
+        <ul>
+          <li>Страна: {{ travelcompanies.country_name }}</li>
+          <li>Город: {{ travelcompanies.city }}</li>
+          <li>Адрес: {{ travelcompanies.addres }}</li>
+          <li>Телефон: {{ travelcompanies.phone_number }}</li>
+          <li>Mail: {{ travelcompanies.mail }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+{% endblock %}

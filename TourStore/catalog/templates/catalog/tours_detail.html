@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %} <title>{{ tours.name }}</title> {% endblock %}
+{% block content %}
+<div class="content">
+    <div class="tour_detail">
+      <h1>{{tours.name}}</h1>
+      <img src="{{ tours.tour_pic.url }}" alt="">
+      <div class="tour_desription">
+        <ul>
+          <li class="desription">Описание: {{ tours.description }}</li>
+          <li>Даты: {{ tours.start_date|date:"d-m-Y" }} - {{ tours.end_date|date:"d-m-Y" }}</li>
+          <li>Страна: {{ tours.hotels_name.country_name }}</li>
+          <li>Город: {{ tours.city }}</li>
+          <li>Туристическая компания: {{ tours.travel_complany_name }}</li>
+          <li>Отель: {{ tours.hotels_name }}</li>
+          <li>Цена: {{ tours.price }}р.</li>
+          <li>Доступные авиакомпании: {% for airline in tours.flights_name.all %} {{ airline }}, {% endfor %}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+{% endblock %}
