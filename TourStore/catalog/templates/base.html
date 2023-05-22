@@ -16,15 +16,13 @@
 </head>
 <body>
   <header>
-    <a href="" class="logo">ChillOut Touristic</a>
+    <a class="logo">ChillOut Touristic</a>
     <ul class="menu">
       <li><a href="{% url 'index' %}">Home</a></li>
       <li><a href="{% url 'tours' %}">Tours</a></li>
-      <li><a href="#">Hotels</a></li>
       <li><a href="{% url 'travel-companies' %}">Travel Companies</a></li>
       <li><a href="{% url 'contacts' %}">Contacts</a></li>
     </ul>
-    <div class="bx bx-menu" id="menu-icon"></div>
   </header>
   {% block content %}{% endblock %}
 </body>
