@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ec5e3b7-b072-4349-9f5e-ed4924f4cdc6" name="Changes" comment="" />
+    <list default="true" id="0ec5e3b7-b072-4349-9f5e-ed4924f4cdc6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TourStore/TourStore/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/TourStore/TourStore/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TourStore/catalog/static/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/TourStore/catalog/static/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TourStore/catalog/templates/catalog/tours_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/TourStore/catalog/templates/catalog/tours_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TourStore/catalog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/TourStore/catalog/urls.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,7 +38,7 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Dooplik/Desktop/Education/Hacking",
+    "last_opened_file_path": "C:/Users/Dooplik/Desktop/Projects/BlogProject",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
@@ -134,9 +140,9 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.runserver" />
       <item itemvalue="Python.а" />
       <item itemvalue="Python.models" />
+      <item itemvalue="Python.runserver" />
       <item itemvalue="Python.settings" />
     </list>
     <recent_temporary>
